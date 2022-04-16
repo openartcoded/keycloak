@@ -10,6 +10,6 @@ RUN /opt/keycloak/bin/kc.sh build
 FROM quay.io/keycloak/keycloak:${KEYCLOAK_VERSION} 
 COPY --from=builder /opt/keycloak/lib/quarkus/ /opt/keycloak/lib/quarkus/
 WORKDIR /opt/keycloak
-ENV KEYCLOAK_ADMIN=admin
-ENV KEYCLOAK_ADMIN_PASSWORD=root
+#ENV KEYCLOAK_ADMIN=admin
+#ENV KEYCLOAK_ADMIN_PASSWORD=root
 
