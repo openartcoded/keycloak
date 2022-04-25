@@ -8,7 +8,7 @@ https://m4rc3l.de/blog/keycloak-quarkus-migration
 
 ```
  docker build \
-  -t nbittich/keycloak:17.0.1 \
-  --build-arg=KEYCLOAK_VERSION=17.0.1 \
+  -t nbittich/keycloak:18.0.0 \
+  --build-arg=KEYCLOAK_VERSION=18.0.0 \
  .
 ```
