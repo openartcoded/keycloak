@@ -1,7 +1,7 @@
-ARG KEYCLOAK_VERSION=21.0.0
+ARG KEYCLOAK_VERSION=21.0.2
 FROM quay.io/keycloak/keycloak:${KEYCLOAK_VERSION} as builder
 
-ENV KC_METRICS_ENABLED=true
+ENV KC_METRICS_ENABLED=false
 ENV KC_FEATURES=token-exchange
 ENV KC_DB=postgres
 
