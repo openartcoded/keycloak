@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v3.2.0
         with:
           build-args: |
-            KEYCLOAK_VERSION=${{ steps.meta.outputs.tags }}
+            KEYCLOAK_VERSION=${{ github.ref_name }}
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
